@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "crd2jsonschema"
-version = "0.3.0"
+version = "0.4.0"
 description = "A utility to extract JSON Schema from a Kubernetes CRD"
 authors = ["Alan J Castonguay <alan@tignis.com>"]
 license = "Apache-2.0"
@@ -11,6 +11,7 @@ keywords = ["kubernetes", "crd", "jsonschema"]
 [tool.poetry.dependencies]
 python = "^3.7"
 PyYAML = "^5.1"
+deepdiff = "^5.0"
 
 [tool.poetry.scripts]
 crd2jsonschema = "crd2jsonschema:main"
